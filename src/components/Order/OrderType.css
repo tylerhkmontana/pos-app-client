@@ -1,0 +1,17 @@
+.OrderType {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.order-category {
+  padding: 10px 0px;
+  width: 30%;
+  text-decoration: none;
+  color: wheat;
+  font-size: medium;
+}
+
+.selected-order-category{
+  border-bottom: 1px solid wheat;
+}

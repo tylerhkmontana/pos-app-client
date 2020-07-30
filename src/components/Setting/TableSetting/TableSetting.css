@@ -1,0 +1,92 @@
+.TableSetting {
+  font-size: medium;
+}
+
+.input-group-table {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.input-size, .input-section {
+  outline: none;
+  margin: 5px;
+  height: 1.5em;
+  border: none;
+  background-color: wheat;
+  text-align: center;
+  font-size: medium;
+}
+
+.table {
+  width: 150px;
+  height: 100px;
+  margin: 20px;
+  background-color: rgb(92, 161, 122);
+  box-shadow: 5px 5px 10px black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.table:hover {
+  background-color: teal;
+  cursor: pointer;
+}
+
+.table-row {
+  display: flex;
+  justify-content: center;
+  /* margin: 20px 0px; */
+}
+
+.table-number {
+  margin-top: 10px;
+  width: 70%;
+  background-color: teal;
+  text-align: center;
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 1.5em;
+}
+
+.table-number::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.setting-button {
+  margin: 10px;
+  border: none;
+  background-color: seagreen;
+  box-shadow: 3px 3px 5px black;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.setting-button:hover {
+  background-color: wheat;
+  cursor: pointer;
+}
+
+.saved-settings, .create-new {
+  text-decoration: none;
+  border: 1px solid wheat;
+  background-color: transparent;
+  color: wheat;
+  padding: 5px;
+  outline: none;
+}
+
+.saved-settings:hover, .create-new:hover, 
+.saved-settings-active, .create-new-active {
+  background-color: wheat;
+  color: black;
+  cursor: pointer;
+}
+

@@ -1,0 +1,51 @@
+.Message {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+}
+
+.close-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 5px;
+}
+
+.close-message:hover {
+  cursor: pointer;
+}
+
+.success-msg, .error-msg {
+  color: white;
+  opacity: 0.8;
+  padding: 10px;
+  margin: 10px 10px 0px 10px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px black;
+  animation-name: test;
+  animation-duration: 0.5s;
+}
+
+.success-msg {
+  background-color: green;
+}
+
+.error-msg {
+  background-color: crimson;
+}
+
+@keyframes test {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}

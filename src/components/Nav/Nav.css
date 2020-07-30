@@ -1,0 +1,27 @@
+.Nav {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  text-decoration: none;
+  color: black;
+  background-color: seagreen;
+  padding: 10px 20px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 5px 5px 5px black;
+  font-size: medium;
+}
+
+.nav-list:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.selected-nav-list {
+  background-color: white;
+}

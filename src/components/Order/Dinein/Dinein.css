@@ -1,0 +1,23 @@
+.section-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-route {
+  text-decoration: none;
+  background-color: rgb(80, 57, 47);
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.section-route:hover {
+  background-color: white;
+  color: black;
+}
+
+.selected-section-route {
+  background-color: white;
+  color: black;
+}

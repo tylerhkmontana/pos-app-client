@@ -1,0 +1,23 @@
+.menus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+.setting-buttons {
+  width: 500px;
+  height: 50px;
+  box-shadow: 5px 5px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: medium;
+  outline: none;
+  background-color: wheat;
+}
+
+.setting-buttons:hover {
+  background-color: white;
+  cursor: pointer;
+}
