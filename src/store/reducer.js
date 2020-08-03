@@ -1,6 +1,8 @@
 const initialState = {
   success_msg: [],
   error_msg: [],
+  categories: [],
+  items: []
 }
 
 const addMessage = function(type, msg) {
@@ -35,6 +37,14 @@ const reducer = (state = initialState, action) => {
       return deleteMessage.apply(state, [action.payload.msg_type, action.payload.msg_index])
     case 'ADD_MESSAGE':
       return addMessage.apply(state, [action.payload.msg_type, action.payload.msg])
+    case 'POPULATE_MENU':
+      const categories = action.payload.categories
+      const items = action.payload.items
+      return {
+        ...state,
+        categories,
+        items
+      }
     default:
       return state
   }
