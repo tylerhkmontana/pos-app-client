@@ -1,0 +1,92 @@
+.CategorySection {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  margin-top: 20px;
+}
+
+.category-collection {
+  flex: 3.5;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 20px 10px;
+  overflow-x: auto;
+}
+
+.category-collection > .category-button {
+  min-width: 150px;
+  background-color: teal;
+  text-decoration: none;
+  color: black;
+  margin: 5px 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 3px 3px 3px black;
+  outline: none;
+}
+
+.category-collection > .add-category-button {
+  width: 20px;
+  background-color: tomato;
+  text-decoration: none;
+  color: black;
+  margin: 5px 20px;
+  padding: 5px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 3px 3px 3px black;
+  outline: none;
+}
+
+.category-collection > .category-button:hover, .add-category-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.category-create {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.category-create > label, .category-create > input {
+  margin: 10px 0px;
+}
+
+.category-create > input {
+  background-color: transparent;
+  color: wheat;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid wheat;
+  padding: 5px;
+}
+
+.category-create > input::placeholder {
+  color: wheat;
+  font-size: 10px;
+  text-align: center;
+}
+
+.category-create > .input-group {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.category-create > .input-group > label {
+  margin-left: 15px;
+}
+
+.category-create > .button-group button {
+  background-color: transparent;
+  border: 1px solid wheat;
+  outline: none;
+  padding: 3px;
+  color: wheat;
+}

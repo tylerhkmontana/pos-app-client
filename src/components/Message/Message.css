@@ -29,7 +29,7 @@
   position: relative;
   border-radius: 5px;
   box-shadow: 3px 3px 5px black;
-  animation-name: test;
+  animation-name: fade-in;
   animation-duration: 0.5s;
 }
 
@@ -41,7 +41,7 @@
   background-color: crimson;
 }
 
-@keyframes test {
+@keyframes fade-in {
   from {
     opacity: 0;
   }

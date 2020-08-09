@@ -9,6 +9,15 @@ const menuSettingService = {
   },
   getItems() {
     return api.get('/menu-setting/item')
+  },
+  addCategory(categoryInfo) {
+    return api.post('/menu-setting/category', { ...categoryInfo })
+  },
+  updateCategory(newCategoryInfo) {
+    return api.put('/menu-setting/category/update', { ...newCategoryInfo })
+  },
+  deleteCategory(id) {
+    return api.delete('/menu-setting/category/delete', { data: { id } })
   }
 }
 

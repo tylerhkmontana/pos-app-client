@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
 
 import CategorySection from './CategorySection/CategorySection.js'
 import ItemSection from './ItemSection/ItemSection.js'
@@ -12,22 +13,12 @@ export default class MenuSetting extends Component {
       width: '100vw'
     }
 
-    const sectionStyle = {
-      border: '1px solid black',
-      display: 'flex',
-      flex: 1
-    }
-
     return (
       <div className="MenuSetting" style={containerStyle}>
-        <div style={sectionStyle}>
-          <CategorySection />
-        </div>
-       
-        <div style={sectionStyle}>
-          <ItemSection />
-        </div>
-           
+        <CategorySection />
+        <Switch>
+          <Route path="/setting/menu-setting/:category_id" component={ItemSection}/>
+        </Switch>
       </div>
     )
   }
