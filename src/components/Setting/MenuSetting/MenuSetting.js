@@ -16,6 +16,7 @@ export default class MenuSetting extends Component {
     return (
       <div className="MenuSetting" style={containerStyle}>
         <CategorySection />
+        <hr style={{ margin: '40px 30px' }}/>
         <Switch>
           <Route path="/setting/menu-setting/:category_id" component={ItemSection}/>
         </Switch>

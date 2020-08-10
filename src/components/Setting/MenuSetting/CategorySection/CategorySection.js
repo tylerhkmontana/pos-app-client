@@ -27,7 +27,6 @@ const CategorySection = (props) => {
   const selectCategory = (category_id) => {
     const targetCategory = props.categories.filter(category => category._id === category_id)
   
-    console.log(targetCategory[0])
     setCategoryInfo({
       id: targetCategory[0]._id,
       name: targetCategory[0].name,
@@ -139,7 +138,7 @@ const CategorySection = (props) => {
             isCreate ?
               <button onClick={createCategory}>Create</button> :
               <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-                <button style={{ color: 'crimson', border: '1px solid crimson' }} onClick={deleteCategory}>Delete</button>
+                <button className="delete-button" onClick={deleteCategory}>Delete</button>
                 <button onClick={updateCategory}>Update</button>
               </div>
           }
