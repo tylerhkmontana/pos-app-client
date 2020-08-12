@@ -18,6 +18,15 @@ const menuSettingService = {
   },
   deleteCategory(id) {
     return api.delete('/menu-setting/category/delete', { data: { id } })
+  },
+  addItem(itemInfo) {
+    return api.post('/menu-setting/item', { ...itemInfo })
+  },
+  updateItem(newItemInfo) {
+    return api.put('/menu-setting/item/update', { ...newItemInfo })
+  },
+  deleteItem(id) {
+    return api.delete('/menu-setting/item/delete', { data: { id } })
   }
 }
 

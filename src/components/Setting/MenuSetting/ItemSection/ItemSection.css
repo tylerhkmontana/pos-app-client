@@ -89,6 +89,17 @@
   cursor: pointer;
 }
 
+.item-create > .button-group .delete-button {
+  border-color: crimson;
+  color: crimson;
+}
+
+.item-create > .button-group .delete-button:hover {
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+}
+
 .active-button {
   background-color: white;
 }
