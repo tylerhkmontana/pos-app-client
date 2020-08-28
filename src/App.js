@@ -20,7 +20,8 @@ class App extends Component {
       const { items, categories } = (await menuSettingService.getMenu()).data
       this.props.populate_menu(categories, items)
     } catch(err) {
-      this.props.add_errMsg(err.response.data)
+      console.log(err)
+      this.props.add_errMsg(typeof err.response === 'undefined' ? err.message : err.response.data)
     }
   }
   

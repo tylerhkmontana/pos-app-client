@@ -1,0 +1,18 @@
+.Takeout {
+  min-height: 80vh;
+}
+
+.place-order-button {
+  margin: 10px 0px;
+  text-decoration: none;
+  background-color: seagreen;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px black;
+}
+
+.place-order-button:hover {
+  cursor: pointer;
+  background-color: white;
+}
