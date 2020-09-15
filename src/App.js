@@ -16,6 +16,9 @@ import './App.css';
 
 class App extends Component {
   async componentDidMount() {
+    if (!localStorage.getItem('orders')) {
+      localStorage.setItem('orders', JSON.stringify([]))
+    }
     try {
       const { items, categories } = (await menuSettingService.getMenu()).data
       this.props.populate_menu(categories, items)

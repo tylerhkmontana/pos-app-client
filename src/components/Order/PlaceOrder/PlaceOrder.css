@@ -1,0 +1,63 @@
+.PlaceOrder {
+  margin-top: 50px;
+  display: flex;
+}
+
+.PlaceOrder .menu-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.PlaceOrder .order-section {
+  flex: 1;
+}
+
+.menu-section > .category-section {
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 50px;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+.PlaceOrder .category-section > .category-button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: teal;
+  box-shadow: 3px 3px 3px black;
+  margin: 5px 20px;
+  min-width: 150px;
+}
+
+.menu-section > .item-section {
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 50px;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+.PlaceOrder .item-section > .item-button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  background-color: darksalmon;
+  box-shadow: 3px 3px 3px black;
+  margin: 5px 20px;
+  min-width: 150px;
+}
+
+
+.PlaceOrder .category-section > .category-button:hover,
+.PlaceOrder .item-section > .item-button:hover  {
+  background-color: white;
+  cursor: pointer;
+}
